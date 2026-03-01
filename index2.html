@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Site d'Arthur</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+
+    <div id="entete-de-page">
+        <p>Site de Arthur</p>
+    </div>
+
+    <table id="bloc-menu">
+        <tr>
+            <th><a href="index2.html">Accueil</a></th>
+            <th><a href="productions.html">Productions scolaires</a></th>
+            <th><a href="passions.html">Mes passions</a></th>
+            <th><a href="videos.html">Mes vidéos</a></th>
+            <th><a href="monsitedereve.html">Mon site de rêve</a></th>
+        </tr>
+    </table>
+
+    <div class="contenu">
+
+        <div class="presentation">
+           <img src="avatar.png" alt="avatar Arthur"		   style="border-radius:50%;">
+
+            <div class="texte-presentation">
+			
+                <h2>Je me présente...</h2>
+                <p>Je m’appelle Arthur et je suis actuellement en classe de 2nde 7.
+                   Je suis quelqu’un de curieux, motivé et toujours prêt à apprendre de nouvelles choses.
+                   Ce qui me passionne dans la vie c’est avant tout l'automobile et le sport.
+                   J’aime particulièrement combattre et étudier.
+                   Je m’intéresse aussi beaucoup à la médecine et à l’anatomie. Je lis beaucoup de livres à ces sujets et cela m'intrigue. Plus tard, j’aimerais travailler dans ce secteur d’activité.</p>
+            </div>
+        </div>
+
+      </div>
+<div><!--on ajoute le lien où se trouve la musique -->
+<audio  id="zic"src="music.mp3"></audio>
+<!--on nomme les boutons et leur statut -->
+<div>
+<a href="javascript:void(0)" onclick="changeState(0)" class="bouton">PLAY</a>
+<a href="javascript:void(0)" onclick="changeState(1)" class="bouton">PAUSE</a>
+<a href="javascript:void(0)" onclick="changeState(2)" class="bouton active">STOP</a>
+</div>
+<!--on écrit les variable du script -->
+<script>
+<!--on attribue valeur et fonction de chaque bouton -->
+function changeState(x){
+let boutons = document.querySelectorAll(".bouton");
+let audio = document.querySelector("#zic");
+for(let i =0; i<boutons.length; i++){
+boutons[i].classList.remove("active");
+}
+boutons[x].classList.add("active");
+if(x == 0){
+audio.play();
+}
+if(x == 1){
+audio.pause();
+}
+if(x == 2){
+audio.pause();
+audio.currentTime = 0;
+}
+}
+</script><div>
+			
+		<hr>
+		<div id="infos">
+		
+		<h3> A lire aussi: </h3>
+		<!--on ajoute des liens absolues et relatifs -->
+			<ul>
+				 <p>
+        <a href="productions.html">Découvrez mon travail sur Boule de Suif, réalisé en collaboration.</a>
+		
+    </p>
+					 <p>
+        <a href="monsitedereve.html">Découvrez mon site de reve</a>
+		
+    </p>
+	 <p>
+        <a href="https://france3-regions.franceinfo.fr/hauts-de-france/nord-0/un-prof-de-musique-du-nord-fait-des-millions-de-vues-sur-tiktok-avec-ses-eleves-choristes-2956820.html">Découvrez un article qui traite de mon ancienne chorale</a>
+    </p>
+
+			</ul>
+		</div>
+	</div> <br/> 
+				
+<div id="pied-de-page">
+		<p> Projet SNT - Dernière mise à jour : 01/03/2026 <br/>
+		Les textes et images utilisés n'engagent que son auteur : Arthur </p>
+	</div> <br/> 
+</script>
+
+</body>
+</html>

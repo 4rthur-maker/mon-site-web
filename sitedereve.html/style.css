@@ -1,0 +1,79 @@
+/* Import de polices Google */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&family=Roboto:wght@400;700&family=Oswald:wght@400;600&display=swap');
+
+/* Style général */
+body {
+    margin: 0;
+    background-color: #111;
+    color: #eee;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* En-tête */
+header {
+    background-color: #b30000;
+    padding: 30px;
+    text-align: center;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 32px;
+}
+
+/* Navigation */
+nav {
+    background-color: #222;
+    padding: 15px 0;
+}
+
+nav ul {
+    text-align: center;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ff4a4a;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #fff;
+}
+
+/* Sections */
+section {
+    max-width: 900px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+h2, h3 {
+    color: #ff4a4a;
+    font-family: 'Oswald', sans-serif;
+}
+
+/* Images */
+img {
+    width: 100%;
+    border-radius: 10px;
+    margin: 2px 0;
+    box-shadow: 0 0 10px #000;
+}
+
+/* Pied de page */
+footer {
+    background: #222;
+    color: #aaa;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-family: 'Montserrat', sans-serif;
+}
